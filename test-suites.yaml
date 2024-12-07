@@ -1,6 +1,6 @@
 services:
   vendor-portal:
-    image: yeshwanthg6/docker-selenium
+    image: yeshwanthg6/selenium-docker
     environment:
       - HUB_HOST=hub
       - BROWSER
@@ -9,7 +9,7 @@ services:
     volumes:
       - ./output/vendor-portal:/tmp/docker-selenium/test-output
   flight-registration:
-    image: yeshwanthg6/docker-selenium
+    image: yeshwanthg6/selenium-docker
     environment:
       - HUB_HOST=hub
       - BROWSER
