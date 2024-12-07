@@ -3,7 +3,7 @@ services:
     image: yeshwanthg6/docker-selenium
     environment:
       - HUB_HOST=hub
-      - BROWSER=browser
+      - BROWSER
       - THREAD_COUNT=3
       - TEST_SUITE=vendor-portal.xml
     volumes:
@@ -12,7 +12,7 @@ services:
     image: yeshwanthg6/docker-selenium
     environment:
       - HUB_HOST=hub
-      - BROWSER=browser
+      - BROWSER
       - THREAD_COUNT=3
       - TEST_SUITE=flight-reservation.xml
     volumes:
