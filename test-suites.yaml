@@ -1,0 +1,19 @@
+services:
+  vendor-portal:
+    image: yeshwanthg6/docker-selenium
+    environment:
+      - HUB_HOST=hub
+      - BROWSER=browser
+      - THREAD_COUNT=3
+      - TEST_SUITE=vendor-portal.xml
+    volumes:
+      - ./output/vendor-portal:/tmp/docker-selenium/test-output
+  flight-registration:
+    image: yeshwanthg6/docker-selenium
+    environment:
+      - HUB_HOST=hub
+      - BROWSER=browser
+      - THREAD_COUNT=3
+      - TEST_SUITE=flight-reservation.xml
+    volumes:
+      - ./output/flight-reservation:/tmp/docker-selenium/test-output
